@@ -1,6 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+# st.set_page_config( page_icon="📟", title="BMI_cALCULATOR", layout="wide")
+
+st.set_page_config(
+    page_title="BMI Calculator",
+    page_icon="📟",  # Emoji or path to image file
+    layout="centered"
+)
+
 
 footer = """
 <style>
@@ -31,7 +39,6 @@ bmi = weight / ((height/100) **2)
 
 st.write(f" Your BMI is {bmi:.2f}  ")
 
-# st.write("#### BMI is {bmi:.2f}")
 
 st.write( "### BMI Categories ###")
 st.write("- Underweight: BMI less than 10.5")
@@ -42,8 +49,3 @@ st.write("- Obesity: BMI 30 or greater")
 
 st.write("create by AS Developers")
 
-# st.markdown("---")  # Horizontal line
-# st.markdown(
-#     "<div style='text-align: center;'>© 2025 Your Company. All rights reserved.</div>",
-#     unsafe_allow_html=True
-# )
