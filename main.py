@@ -47,5 +47,5 @@ st.write("- Overweight: BMI Between 25 and 29.9")
 st.write("- Obesity: BMI 30 or greater")
 
 
-st.write("create by AS Developers")
+
 
